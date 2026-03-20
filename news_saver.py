@@ -7,9 +7,8 @@ import pandas as pd
 from datetime import datetime
 from dotenv import load_dotenv
 
-
 # Logging setup
-logging.basicConfig(level = logging.DEBUG,
+logging.basicConfig(level = logging.DEBUG, # Change to DEBUG for development mode,INFO for production mode
                     format = '%(asctime)s | %(levelname)-8s | %(message)s',
                     datefmt = '%Y-%m-%d %H:%M:%S',
                     handlers=[logging.FileHandler('news_saver.log'),
